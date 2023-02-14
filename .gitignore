@@ -141,3 +141,17 @@ dmypy.json
 .DS_Store
 1 - Intro to NN/.DS_Store
 .DS_Store
+PyPdTorch/bin/activate
+PyPdTorch/bin/activate.csh
+PyPdTorch/bin/activate.fish
+PyPdTorch/bin/Activate.ps1
+PyPdTorch/bin/convert-caffe2-to-onnx
+PyPdTorch/bin/convert-onnx-to-caffe2
+PyPdTorch/bin/pip
+PyPdTorch/bin/pip3
+PyPdTorch/bin/pip3.9
+PyPdTorch/bin/python
+PyPdTorch/bin/python3
+PyPdTorch/bin/python3.9
+PyPdTorch/bin/torchrun
+PyPdTorch/pyvenv.cfg
