@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     # create an instance of the osc_sender class above
     ip='127.0.0.1'
-    sending_to_port=1123
+    sending_to_port=1124
     py_to_pd_OscSender = SimpleUDPClient(ip, sending_to_port)
 
     # Send generated notes to pd
@@ -32,6 +32,6 @@ if __name__ == '__main__':
         py_to_pd_OscSender.send_message("/note/pitch", pitch)
 
         # wait for a random period of 0.5 to 2 second before playing back the next note
-        wait_time_before_next_note = random.randrange(1, 10)/30    # this is basically IOI (inter-onset interval)
+        wait_time_before_next_note = random.uniform(0.5, 2)   # this is basically IOI (inter-onset interval)
         print("\t\t\t Wait for {:.2f} seconds".format(wait_time_before_next_note))
         time.sleep(wait_time_before_next_note)

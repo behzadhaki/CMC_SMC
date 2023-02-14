@@ -63,7 +63,6 @@ if __name__ == '__main__':
 
         # 1. generate a random pitched note with the provided received value
         pitch = int(random.randrange(40, 64))
-        vel = velocity[0]
         duration = int(random.randrange(0, 1000))
 
         # 2. select a random drum voice

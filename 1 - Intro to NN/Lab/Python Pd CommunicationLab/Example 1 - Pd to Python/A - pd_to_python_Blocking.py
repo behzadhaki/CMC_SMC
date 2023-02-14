@@ -40,12 +40,12 @@ if __name__ == '__main__':
     # define the handler for messages starting with /slider/[slider_id]
     def slider_message_handler(address, *args):
         slider_id = address.split("/")[-1]
-        slider_values[int(float(slider_id))] = args[0]
+        slider_values[int(slider_id)] = args[0]
 
     # define handler for messages starting with /nbox/[nbox_id]
     def num_box_message_handler(address, *args):
         nbox_id = address.split("/")[-1]
-        num_box_values[int(float(nbox_id))] = args[0]
+        num_box_values[int(nbox_id)] = args[0]
 
     def quit_message_handler(address, *args):
         quitFlag[0] = True
@@ -56,10 +56,10 @@ if __name__ == '__main__':
     dispatcher.map("/nbox*", num_box_message_handler)
     dispatcher.map("/quit*", quit_message_handler)
 
-
     # you can have a default_handler for messages that don't have dedicated handlers
     def default_handler(address, *args):
         print(f"No action taken for message {address}: {args}")
+
     dispatcher.set_default_handler(default_handler)
 
     # python-osc method for establishing the UDP communication with pd

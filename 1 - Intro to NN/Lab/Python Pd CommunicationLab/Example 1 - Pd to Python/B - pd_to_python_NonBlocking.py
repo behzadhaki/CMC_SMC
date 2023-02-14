@@ -6,7 +6,6 @@ import threading
 from pythonosc.osc_server import BlockingOSCUDPServer
 from pythonosc.dispatcher import Dispatcher
 
-
 class OscReceiver(threading.Thread):
 
     def __init__(self, ip, receive_from_port, quit_event, address_list, address_handler_list):
@@ -132,7 +131,8 @@ if __name__ == '__main__':
     address_handler_list = [slider_message_handler, num_box_message_handler, quit_message_handler]
 
     osc_receiver_from_pd = OscReceiver(ip="127.0.0.1", receive_from_port=1415, quit_event=quit_event,
-                                       address_list=address_list, address_handler_list=address_handler_list)
+                                       address_list=address_list,
+                                       address_handler_list=address_handler_list)
 
     osc_receiver_from_pd.start()
 

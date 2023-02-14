@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     # create an instance of the osc_sender class above
     ip='127.0.0.1'
-    sending_to_port=1123
+    sending_to_port=1124
     py_to_pd_OscSender = SimpleUDPClient(ip, sending_to_port)
 
     # Send generated notes to pd
