@@ -40,7 +40,7 @@ Feel free to use any of the source codes/patches provided.
 You are asked to modify the patches/source codes provided for Example 3 (two-way communication). 
 
 ### Task A. (1 Mark)
-Extend the existing pd patch (Example_3_two_way_communication.pd) to 4 quarter notes (i.e. extend to 16 steps).
+Extend the existing pd patch (Example_3_two_way_communication.pd) to 3 quarter notes (i.e. extend to 12 steps).
 
 ### Task B. (1 Mark)
 Implement two sliders or number boxes to specify the minimum and maximum pitch allowed to be generated in the python script.
