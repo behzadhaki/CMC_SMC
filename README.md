@@ -44,5 +44,5 @@ pip3 install torch
 pip3 install torch --extra-index-url https://download.pytorch.org/whl/cpu
 ```
 
-<img src="img.png"  width="300">
+<img src="Lab%20-%20Pd%20Py%20Communication/images/img.png"  width="300">
 
