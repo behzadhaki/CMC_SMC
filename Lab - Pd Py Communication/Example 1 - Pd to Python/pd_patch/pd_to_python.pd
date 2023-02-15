@@ -1,19 +1,19 @@
-#N canvas 960 25 960 987 12;
-#X obj 57 56 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
-#X floatatom 57 489 5 0 0 0 - - - 0;
+#N canvas 960 24 960 987 12;
+#X obj 57 56 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8800 1;
+#X floatatom 57 489 5 0 0 0 - - -;
 #X obj 57 238 list prepend send, f 10;
 #X obj 57 305 list trim;
 #X msg 560 155 disconnect;
 #X msg 549 130 connect 127.0.0.1 1415;
 #X obj 549 189 s ip_port;
 #X obj 549 106 loadbang;
-#X obj 183 55 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 183 55 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 5300 1;
 #X obj 183 237 list prepend send, f 10;
 #X obj 183 304 list trim;
-#X obj 314 54 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 314 54 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 7900 1;
 #X obj 314 236 list prepend send, f 10;
 #X obj 314 303 list trim;
 #X text 38 32 slider 0;
@@ -25,10 +25,10 @@
 #X obj 58 563 list prepend send, f 10;
 #X obj 58 630 list trim;
 #X text 53 458 num box 0;
-#X floatatom 177 489 5 0 0 0 - - - 0;
+#X floatatom 177 489 5 0 0 0 - - -;
 #X obj 178 563 list prepend send, f 10;
 #X obj 178 630 list trim;
-#X floatatom 309 486 5 0 0 0 - - - 0;
+#X floatatom 309 486 5 0 0 0 - - -;
 #X obj 310 560 list prepend send, f 10;
 #X obj 310 627 list trim;
 #X text 173 458 num box 4;
@@ -45,7 +45,7 @@
 #X obj 59 658 s to_netsend;
 #X obj 179 657 s to_netsend;
 #X obj 311 654 s to_netsend;
-#X floatatom 504 482 5 0 0 0 - - - 0;
+#X floatatom 504 482 5 0 0 0 - - -;
 #X obj 505 556 list prepend send, f 10;
 #X obj 505 623 list trim;
 #X obj 506 650 s to_netsend;
@@ -55,8 +55,8 @@ pd;
 #X obj 672 622 list trim;
 #X obj 673 649 s to_netsend;
 #X obj 671 516 oscformat /quit/, f 18;
-#X obj 671 425 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 671 425 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X msg 708 480 1;
 #X obj 504 517 oscformat /bpm/track0;
 #X connect 0 0 17 0;
@@ -96,5 +96,4 @@ pd;
 #X connect 51 0 48 0;
 #X connect 52 0 53 0;
 #X connect 53 0 51 0;
-#X connect 53 0 4 0;
 #X connect 54 0 44 0;

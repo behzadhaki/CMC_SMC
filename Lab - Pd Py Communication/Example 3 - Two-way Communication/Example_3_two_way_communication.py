@@ -1,3 +1,5 @@
+import queue
+import time
 import random
 
 from pythonosc.osc_server import BlockingOSCUDPServer
@@ -60,7 +62,7 @@ if __name__ == '__main__':
         print(f"Received velocity value {velocity[0]}")
 
         # 1. generate a random pitched note with the provided received value
-        pitch = int(random.randrange(40, 52)) - random.randint(-1, 1) * 12
+        pitch = int(random.randrange(40, 52))       # 1 octave
         vel = velocity[0]
         duration = int(random.randrange(0, 1000))
 
