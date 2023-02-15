@@ -53,3 +53,4 @@ Right now the drum generation is uniformly random. Modify the drum generator suc
 For example, let's assume we are dealing with Kick, Snare and Hat generation. If we randomly sample these, there is a 1/3 probability of any of these to be active.
 if we want to modify the code such that kicks are 3 times and snares are 2 times more likely than hats, 
 then the probability of a kick happening would be 3/(3+2+1) and snare would be 2/(3+2+1) and hats would be 1/(3+2+1).
+
