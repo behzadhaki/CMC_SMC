@@ -10,7 +10,7 @@ Extending the functionalities of the pd/python examples reviewed in the lab
  2. Your python source codes (to be placed in the Assignment/SourceCode/ directory)
  3. A video reporting/discussing your submissions (to be placed in the Assignment/Report/ directory). 
  For the video, I would like a recording showing that the code/patches work as intended. 
- You should also talk about your implementations in the video. (**2 Marks**)
+ You should also talk about your implementations in the video. (**1 Mark**)
  If you fail to make some part work, make sure to discuss the issues and the process in the video for partial marks. 
  Lastly, If you prefer not to talk over the video, please write a short document instead to accompany the video.     
 
@@ -39,14 +39,11 @@ Feel free to use any of the source codes/patches provided.
 ## Tasks 
 You are asked to modify the patches/source codes provided for Example 3 (two-way communication). 
 
-### Task A. (2 Marks)
+### Task A. (1 Mark)
 Extend the existing pd patch (Example_3_two_way_communication.pd) to 4 quarter notes (i.e. extend to 16 steps).
 
-### Task B. (2 Marks)
+### Task B. (1 Mark)
 Implement two sliders or number boxes to specify the minimum and maximum pitch allowed to be generated in the python script.
-
-### Task C. (2 Marks)
-Remove the note quantizer from the pd patch. Instead, implement a note quantizer in python such that only specific notes can be generated.
 
 ### Task D. (2 Marks)
 Right now the drum generation is uniformly random. Modify the drum generator such that a set of user-defined weights denote the relative likelihood of each voice generated. 
