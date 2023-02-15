@@ -1,10 +1,9 @@
 Assignment for Week 5 Lab
 ------
-For this assignment, you have two options to choose from:
- - Option 1: Extending the functionalities of the pd/python examples reviewed in the lab
- - Option 2: Implementing a note delay in python 
 
-Details for each option can be found below.
+Extending the functionalities of the pd/python examples reviewed in the lab
+----
+
  
  **Deliverables**
  1. Your pd files (to be placed in the Assignment/PdPatch/ directory)
@@ -16,10 +15,21 @@ Details for each option can be found below.
  Lastly, If you prefer not to talk over the video, please write a short document instead to accompany the video.     
 
 #### Important Notes About Submissions:
-1. The main pd patch you use, must be named in this format FirstName_LastName_uNumber.pd where uNumber is your student number starting with u.
-The same filename with a .py extension must be used for your main python script. 
-2. **The assignment won't be marked if no report is delivered**  
-3. Each option is 8 Marks overall and 2 marks are dedicated to the report. 
+1. The Main folder you submit, must be named as:
+
+   
+     /[FirstName_LastName_uNumber]/
+
+2. The same filename with a .py extension must be used for your main python script and pd patch
+
+   
+     /[FirstName_LastName_uNumber]/*/[FirstName_LastName_uNumber].pd
+     /[FirstName_LastName_uNumber]/*/[FirstName_LastName_uNumber].py
+
+
+ 
+3. **The assignment won't be marked if no report is delivered**  
+4. The tasks add up to 8 marks and 2 marks are dedicated to the report. 
 
 **Don't spend too much time on the report. As long as the video (and the written document in case you don't like to narrate on the video)
  shows what works/doesnt work and comments on your implementation, you will get full marks on the report submission requirement.** 
@@ -42,16 +52,4 @@ Remove the note quantizer from the pd patch. Instead, implement a note quantizer
 Right now the drum generation is uniformly random. Modify the drum generator such that a set of user-defined weights denote the relative likelihood of each voice generated. 
 For example, let's assume we are dealing with Kick, Snare and Hat generation. If we randomly sample these, there is a 1/3 probability of any of these to be active.
 if we want to modify the code such that kicks are 3 times and snares are 2 times more likely than hats, 
-then the probability of a kick happening would be 3/(3+2+1) and snare would be 2/(3+2+1) and hats would be 1/(3+2+1). 
-
-## Option 2 (8 Marks)
-**Please only attempt this option if you are experienced with the concepts discussed in class (as well as multi-threaded programming).** 
-
-Implement a note delay effect in python. The delay time and feedback should be controllable from pd. The delay time can be defined in whatever units of time you prefer.
- 
-For this work, we assume notes arrive to the python program via osc from pd, and the delayed versions are broadcast back to pd at the right time specified by the delay time and the feedback. 
-You don't need to implement a sequencer in pd to send notes, you can manually do so via a trigger button that signals osc sender to send a specified pitch, velocity, duration to python
-
-One approach here could be to use a separate Thread for each note received, in which the repetitions are sent back to pd at correct times. Feel free to take any other approach you prefer.  
-
-**Note** You can assume that the delay time and feedback for a note are constant after the note is received in python. 
+then the probability of a kick happening would be 3/(3+2+1) and snare would be 2/(3+2+1) and hats would be 1/(3+2+1).
