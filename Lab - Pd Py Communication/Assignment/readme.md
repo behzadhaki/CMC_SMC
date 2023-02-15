@@ -36,8 +36,8 @@ Extending the functionalities of the pd/python examples reviewed in the lab
 
 Feel free to use any of the source codes/patches provided. 
    
-## Option 1 
-In this option, you are asked to modify the patches/source codes provided for Example 3 (two-way communication). 
+## Tasks 
+You are asked to modify the patches/source codes provided for Example 3 (two-way communication). 
 
 ### Task A. (2 Marks)
 Extend the existing pd patch (Example_3_two_way_communication.pd) to 4 quarter notes (i.e. extend to 16 steps).
