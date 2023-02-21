@@ -2,7 +2,7 @@
 
 import torch
 import math
-from model import get_hits_activation
+from utils import get_hits_activation
 
 
 # --------------------------------------------------------------------------------
