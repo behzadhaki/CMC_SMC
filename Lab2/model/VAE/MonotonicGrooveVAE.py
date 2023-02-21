@@ -4,7 +4,7 @@ import torch
 import json
 import os
 
-from model.VAE.shared_model_components import VAE_components
+import model.VAE.shared_model_components as VAE_components
 
 
 class GrooveTransformerEncoderVAE(torch.nn.Module):
