@@ -1,6 +1,6 @@
 #  Copyright (c) 2022. \n Created by Hernan Dario Perez
 import torch
-from model import GrooveTransformerEncoderVAE
+from model.VAE.MonotonicGrooveVAE import GrooveTransformerEncoderVAE
 from logging import getLogger
 logger = getLogger("helpers/VAE/modelLoader.py")
 logger.setLevel("DEBUG")
